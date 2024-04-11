@@ -8,7 +8,13 @@ def encoder(password):
     return new_password
 
 def decoder(password):
-    pass
+    nums ='0123456789'
+    dec_password = ""
+    for char in password:
+        char = int(char) - 3
+        char = nums[char]
+        dec_password += char
+    return dec_password
 
 if __name__ == "__main__":
     password = None
