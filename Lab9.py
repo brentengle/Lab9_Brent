@@ -7,6 +7,7 @@ def encoder(password):
         new_password += char
     return new_password
 
+#decodes password
 def decoder(password):
     nums ='0123456789'
     dec_password = ""
